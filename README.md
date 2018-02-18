@@ -3,6 +3,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
+In addition, this project has been containerized using Docker.
+
+Use the following Docker commands:
+
+### `docker build . -t reacttddapp`
+
+Builds Node container, runs the tests, prepares the production build and the Alpine container to host the static files.<br>
+
+### `docker run -d -p 8080:80 reacttddapp`
+
+Runs the container on the local 8080 port (8080 is used as an example, you can specify a port to your liking) <br>
+Open [http://localhost:8080](http://localhost:8080) to view the app in the browser.
+
 ## Table of Contents
 
 - [Updating to New Releases](#updating-to-new-releases)
